@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallaxe basique</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Chargement de l'API YouTube -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- Chargement de la bibliothèque jQuery (CDN) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+        <script src="../parallaxe/medias/cinema_fr.geojson"></script>
+</head>
+
+<body>
+
+    <a href="#haut"><img src="../parallaxe/medias/poster/tt.png" id="#" alt="" width="250"></a>
+    <!-- menu -->
+    <nav class="menu">
+        <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+        <label class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+        </label>
+
+        <a href="#1a" class="menu-item blue"> <img src="../parallaxe/medias/logos/atreides.svg" alt=""><i
+                class="fa fa-anchor"></i> </a>
+        <a href="#2a" class="menu-item green"> <img src="../parallaxe/medias/logos/sisters.svg" alt=""><i
+                class="fa fa-coffee"></i> </a>
+        <a href="#3a" class="menu-item red"> <img src="../parallaxe/medias/logos/fremen.svg" alt=""><i
+                class="fa fa-heart"></i> </a>
+        <a href="#4a" class="menu-item purple"> <img src="../parallaxe/medias/logos/harkonnen.svg" alt=""><i
+                class="fa fa-microphone"></i> </a>
+        <a href="#5a" class="menu-item orange"> <img src="../parallaxe/medias/logos/legendary_logo.svg" alt=""><i
+                class="fa fa-star"></i> </a>
+        <a href="#6a" class="menu-item lightblue"> <img src="../parallaxe/medias/logos/planet.svg" alt=""><i
+                class="fa fa-diamond"></i> </a>
+    </nav>
+
+    <!-- reste -->
+    <main>
+        <div class="scroller">
+            <a id="haut"></a>
+
+            <section id=1a>
+
+                <div>
+                    <div id="video"></div>
+                </div>
+            </section>
+
+            <section id=2a>
+
+
+                <a href="https://www.warnerbros.fr/"> <img src="../parallaxe/medias/logos/wb_logo.svg" alt=""> </a>
+                <a href="https://fr.wikipedia.org/wiki/Legendary_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)"> <img
+                        src="../parallaxe/medias/logos/legendary_logo.svg" alt=""></a>
+                <a href="https://fr-fr.facebook.com/"> <img src="../parallaxe/medias/logos/logo_facebook.svg"
+                        alt=""></a>
+                <a href="https://twitter.com/"> <img src="../parallaxe/medias/logos/logo_twitter.svg" alt=""></a>
+                <a href="https://www.instagram.com/"> <img src="../parallaxe/medias/logos/logo_instagram.svg"
+                        alt=""></a>
+                <img src="../parallaxe/medias/images/denis_villeneuve.webp" alt="">
+                <p>About the film</p>
+                <article>Dune is based on a complex imagined society set roughly 20,000 years in the future. The setting
+                    is the year 10,191, and human beings have spread out and colonized planets throughout the universe.
+                    On the planet Caladan, Duke Leto of the House of Atreides is preparing to leave for his new position
+                    as the governor of Arrakis a desert planet with valuable resources of melange, a spice drug that is
+                    extremely popular
+                    with wealthy people. Leto and his family, including his concubine, Jessica, and his son, Paul,
+                    suspect a trap by their rivals, the Harkonnens, led by Baron Harkonnen. Leto decides to settle on
+                    Arrakis because of its rich supplies of melange, despite warnings from his men, including his
+                    adviser, Thufir Hawat, and his master-of-arms, Gurney Halleck.The Atreides arrive on Arrakis and the
+                    duke quickly moves to secure the planet from a Harkonnen
+                    attack. His main plan is to enlist the Fremen, the tough natives of the Arrakeen desert, as soldiers
+                    and advisers. Meanwhile, Paul’s and Jessica’s special abilities intrigue the Fremen. Jessica is a
+                    member of the Bene Gesserit, a school of quasi-mystical witches with strange powers. The Fremen
+                    believe that Jessica and her son are saviors who have come to lead them toward creating a lush
+                    paradise on the dry Arrakis.</article>
+            </section>
+
+            <section id=3a>
+
+
+
+                <div>
+                    <div>
+                        <div>
+                            <p>lance-man</p><img src="../parallaxe/medias/images/Dune05.webp" alt="Une image au hasard">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>batista</p><img src="../parallaxe/medias/images/dune-david-bautista.jpg"
+                                alt="Une image au hasard">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>brin tenebreux</p><img src="../parallaxe/medias/images/dune-timothee-chalamet.jpg"
+                                alt="Une image au hasard">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Betrand Chang</p><img src="../parallaxe/medias/images/14.jpg" alt="Une image au hasard">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+            </section>
+
+            <section id=4a>
+
+                <div>
+                    <img src="../parallaxe/medias/images/02.jpg" alt="Une image au hasard">
+                    <img src="../parallaxe/medias/images/04.jpg" alt="Une image au hasard">
+                    <img src="../parallaxe/medias/images/07.jpg" alt="Une image au hasard">
+                    <img src="../parallaxe/medias/images/09.jpg" alt="Une image au hasard">
+                </div>
+
+                <div>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+
+            <section id=5a>
+                <div id="carte"></div>
+
+                <button>Localise moi !</button>
+
+                <!-- Contenu injecté ici -->
+                <p></p>
+            </section>
+        </div>
+
+
+        <script src="../parallaxe/script/script.js"></script>
+    </main>
+</body>
+
+</html>
