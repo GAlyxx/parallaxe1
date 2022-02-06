@@ -1,21 +1,11 @@
 // Variable globale
 let index = 0;
 
-// Gestion des événements
-$('section:nth-of-type(4) span').click(function () {
-    // Récupération index
-    let indexN = $('section:nth-of-type(4) span').index(this);
-
-    // Renouveller l'image
-    $('section:nth-of-type(4) img').eq(index).fadeOut(1000).end().eq(indexN).fadeIn(1000);
-
-    // Mettre à jour l'index
-    index = indexN;
-});
 
 //Gestion des evenements 2//
 $('section:nth-of-type(3) span').click(function () {
     // Récupération index
+
     let indexN = $('section:nth-of-type(3) span').index(this);
 
     // Renouveller l'image
@@ -28,6 +18,18 @@ $('section:nth-of-type(3) span').click(function () {
     index = indexN;
 });
 
+// Gestion des événements
+$('section:nth-of-type(4) span').click(function () {
+  
+    // Récupération index
+    let indexN = $('section:nth-of-type(4) span').index(this);
+
+    // Renouveller l'image
+    $('section:nth-of-type(4) img').eq(index).fadeOut(1000).end().eq(indexN).fadeIn(1000);
+
+    // Mettre à jour l'index
+    index = indexN;
+});
 /*script pour la video*/
 
 let etatLecteur;
@@ -158,4 +160,17 @@ $("button").click(function () {
     $("#5a>p").text("La géolocalisation n'est pas supportée par votre navigateur");
   }
 });
+
+
+//parallax
+$('#1a').parallaxe(.5);
+
+$('#2a').parallaxe(.5);
+
+$('#3a').parallaxe(.5);
+
+$('#4a').parallaxe(.5);
+
+$('#5a').parallaxe(.5);
+
 

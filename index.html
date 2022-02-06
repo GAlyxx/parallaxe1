@@ -17,7 +17,8 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
-        <script src="./medias/cinema_fr.geojson"></script>
+    <script src="./medias/cinema_fr.geojson"></script>
+    <script src="./script/parallaxe.js"></script>
 </head>
 
 <body>
@@ -32,18 +33,18 @@
             <span class="lines line-3"></span>
         </label>
 
-        <a href="#1a" class="menu-item blue"> <img src="./medias/logos/atreides.svg" alt=""><i
-                class="fa fa-anchor"></i> </a>
-        <a href="#2a" class="menu-item green"> <img src="./medias/logos/sisters.svg" alt=""><i
-                class="fa fa-coffee"></i> </a>
-        <a href="#3a" class="menu-item red"> <img src="./medias/logos/fremen.svg" alt=""><i
-                class="fa fa-heart"></i> </a>
+        <a href="#1a" class="menu-item blue"> <img src="./medias/logos/atreides.svg" alt=""><i class="fa fa-anchor"></i>
+        </a>
+        <a href="#2a" class="menu-item green"> <img src="./medias/logos/sisters.svg" alt=""><i class="fa fa-coffee"></i>
+        </a>
+        <a href="#3a" class="menu-item red"> <img src="./medias/logos/fremen.svg" alt=""><i class="fa fa-heart"></i>
+        </a>
         <a href="#4a" class="menu-item purple"> <img src="./medias/logos/harkonnen.svg" alt=""><i
                 class="fa fa-microphone"></i> </a>
         <a href="#5a" class="menu-item orange"> <img src="./medias/logos/legendary_logo.svg" alt=""><i
                 class="fa fa-star"></i> </a>
-        <a href="#6a" class="menu-item lightblue"> <img src="./medias/logos/planet.svg" alt=""><i
-                class="fa fa-diamond"></i> </a>
+        <a href="#a" class="menu-item lightblue"> <img src="./medias/logos/planet.svg" alt=""><i class="fa fa-star"></i>
+        </a>
     </nav>
 
     <!-- reste -->
@@ -51,24 +52,22 @@
         <div class="scroller">
             <a id="haut"></a>
 
-            <section id=1a>
+            <section id="1a">
 
                 <div>
                     <div id="video"></div>
                 </div>
             </section>
 
-            <section id=2a>
+            <section id="2a">
 
 
                 <a href="https://www.warnerbros.fr/"> <img src="./medias/logos/wb_logo.svg" alt=""> </a>
                 <a href="https://fr.wikipedia.org/wiki/Legendary_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)"> <img
                         src="./medias/logos/legendary_logo.svg" alt=""></a>
-                <a href="https://fr-fr.facebook.com/"> <img src="./medias/logos/logo_facebook.svg"
-                        alt=""></a>
+                <a href="https://fr-fr.facebook.com/"> <img src="./medias/logos/logo_facebook.svg" alt=""></a>
                 <a href="https://twitter.com/"> <img src="./medias/logos/logo_twitter.svg" alt=""></a>
-                <a href="https://www.instagram.com/"> <img src="./medias/logos/logo_instagram.svg"
-                        alt=""></a>
+                <a href="https://www.instagram.com/"> <img src="./medias/logos/logo_instagram.svg" alt=""></a>
                 <img src="./medias/images/denis_villeneuve.webp" alt="">
                 <p>About the film</p>
                 <article>Dune is based on a complex imagined society set roughly 20,000 years in the future. The setting
@@ -88,31 +87,36 @@
                     paradise on the dry Arrakis.</article>
             </section>
 
-            <section id=3a>
+            <section id="3a">
 
 
 
                 <div>
                     <div>
                         <div>
-                            <p>lance-man</p><img src="./medias/images/Dune05.webp" alt="Une image au hasard">
+                            <p>lance-man</p> <img src="./medias/images/Dune05.webp" alt="Une image au hasard">
+                            <p>Lance-flamme est un homme bon prêt à tout pour aider ses alliés, armé de son bâton feu, il ne peut que faire retrousser passage à tous les truands et malandrin du secteur 76</p>
+
                         </div>
                     </div>
                     <div>
                         <div>
-                            <p>batista</p><img src="./medias/images/dune-david-bautista.jpg"
-                                alt="Une image au hasard">
+                            <p>batista</p><img src="./medias/images/dune-david-bautista.jpg" alt="Une image au hasard">
+                             <p>un magnifique crâne chauve et un regard à vous glacer le sang, il ne fait rien dans le demi mesure, c'est un as de la gâchette et du combat rapproché, ajoutez à cela un charismes or norme qui saura en faire rougir certaines</p>
                         </div>
                     </div>
                     <div>
                         <div>
                             <p>brin tenebreux</p><img src="./medias/images/dune-timothee-chalamet.jpg"
                                 alt="Une image au hasard">
+                                <p>Un des brins ténébreux que l'on ne trouve plus à notre époque, a part certains Bg de son espèce .Des yeux ténébreux, des habits noir et ténébreux, et ... Tout est ténébreux chez lui, il me fait penser à un certain vampire dans ....</p>
+            
                         </div>
                     </div>
                     <div>
                         <div>
                             <p>Betrand Chang</p><img src="./medias/images/14.jpg" alt="Une image au hasard">
+                            <p>Que dire de ce personnage, entre son cristal frontal noir, et son doux costume de soie rouge, il ne peut que vous faire briller les yeux, quant à son nom bien typique français/chinois il n'aura aucune difficulté à se fonde dans la masse.</p>
                         </div>
                     </div>
 
@@ -128,7 +132,7 @@
 
             </section>
 
-            <section id=4a>
+            <section id="4a">
 
                 <div>
                     <img src="./medias/images/02.jpg" alt="Une image au hasard">
@@ -145,7 +149,7 @@
                 </div>
             </section>
 
-            <section id=5a>
+            <section id="5a">
                 <div id="carte"></div>
 
                 <button>Localise moi !</button>
@@ -156,8 +160,9 @@
         </div>
 
 
-        <script src="./script/script.js"></script>
+
     </main>
+    <script src="./script/script.js"></script>
 </body>
 
 </html>
